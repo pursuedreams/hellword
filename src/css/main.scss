@@ -1,0 +1,38 @@
+// ------------------------------------------------------------------------------
+// name: main
+// ------------------------------------------------------------------------------
+/// HTML
+$--html-font-size: 100px !default;
+$--color-text-primary: #303133;
+$--font-size-base: .14rem !default;
+$--background-color-base: #f8f8f8 !default;
+/// BODY
+$--body-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !default;
+
+body {
+  color: $--color-text-primary;
+  font-family: $--body-font-family;
+  font-size: $--font-size-base;
+  background-color: $--background-color-base;
+  line-height: 1;
+
+  // 字体渲染抗锯齿，只对 MacOS 的 webkit、moz 有效，Windows 系统无区别
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+// 页面根容器（唯一）
+#app {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+// 符号位字号缩小
+.symbol {
+  font-size: .8em;
+}
