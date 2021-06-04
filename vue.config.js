@@ -12,13 +12,14 @@ const webpackConfig = {
   outputDir: 'dist',
   assetsDir: 'static',
 
+
   // 调试配置
   devServer: {
     // 跨域配置
     proxy: {
-      '/api': {
-        target: 'https://www.runoob.com',
-        pathRewrite: { '^/api': '' },
+      '/egg-export': {
+        target: 'http://127.0.0.1:15303/',
+        pathRewrite: { '^/egg-export': '' },
         changeOrigin: true
       }
     }

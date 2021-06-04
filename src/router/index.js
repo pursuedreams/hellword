@@ -22,6 +22,15 @@ const routesConfig = [
 	{ path: '/', name: 'home', component: () => import('@/views/home') },
 	{ path: '/home', name: 'Home', component: () => import('@/views/home'), meta: { title: '首页', cache: false }  },
 	{ path: '/other', name: 'Other', component: () => import('@/views/other'), meta: { title: '其他', cache: false } },
+	{ path: '/cssgrid', name: 'Other', component: () => import('@/views/cssgrid'), meta: { title: 'cssgrid', cache: false } },
+	{ path: '/containerdisplay', name: 'Containerdisplay', component: () => import('@/views/cssgrid/containerdisplay'), meta: { title: 'containerdisplay', cache: false } },
+	{ path: '/containergap', name: 'containergap', component: () => import('@/views/cssgrid/containergap'), meta: { title: 'containergap', cache: false } },
+	{ path: '/containerareas', name: 'containerareas', component: () => import('@/views/cssgrid/containerareas'), meta: { title: 'containerareas', cache: false } },
+	{ path: '/containerjustify', name: 'containerjustify', component: () => import('@/views/cssgrid/containerjustify'), meta: { title: 'containerjustify', cache: false } },
+	// js
+	{ path: '/js', name: 'js', component: () => import('@/views/js'), meta: { title: 'js', cache: false } },
+	// 拖动表格排序
+	{ path: '/table', name: 'Table', component: () => import('@/views/table'), meta: { title: 'table', cache: false } },
 ];
 
 
