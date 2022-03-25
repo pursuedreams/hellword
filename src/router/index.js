@@ -31,6 +31,12 @@ const routesConfig = [
 	{ path: '/js', name: 'js', component: () => import('@/views/js'), meta: { title: 'js', cache: false } },
 	// 拖动表格排序
 	{ path: '/table', name: 'Table', component: () => import('@/views/table'), meta: { title: 'table', cache: false } },
+	// svg
+	{ path: '/svg', name: 'svg', component: () => import('@/views/svg'), meta: { title: 'svg', cache: false } },
+	// cascader
+	{ path: '/cascader', name: 'cascader', component: () => import('@/views/cascader'), meta: { title: 'cascader', cache: false } },
+	// cascader
+	{ path: '/testCascade', name: 'testCascade', component: () => import('@/views/cascader/testCascade'), meta: { title: 'testCascade', cache: false } },
 ];
 
 
